@@ -946,6 +946,13 @@ def inject_css():
         0%, 100% { transform: scaleY(.92); opacity: .68; }
         50% { transform: scaleY(1.12); opacity: 1; }
       }
+      /* Ép chữ của Radio (Buy/Hold) và Slider (Trade size) thành màu tối */
+        div[data-testid="stRadio"] label p, 
+        div[data-testid="stSlider"] label p,
+        div[data-testid="stSlider"] div {
+            color: #1e1e1e !important;
+            font-weight: 600 !important;
+        }
     </style>
     """,
         unsafe_allow_html=True,
